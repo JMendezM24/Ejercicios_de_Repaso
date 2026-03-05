@@ -184,9 +184,37 @@ public class Main {
             System.out.println("No es múltiplo de 7 ni de 11");
     }
     
+    	// EJERCICIO 7
+    public static void ejercicio7() {
+        System.out.println("\n--- Ejercicio 7: un programa que lea un número n y muestre los números entre 1 y n que sean: divisibles entre 3 pero no entre 2. ---");
+        int n;
+        do {
+            n = leerEntero("Ingrese un número >= 1: ");
+            if (n < 1) System.out.println("Debe ser >= 1.");
+        } while (n < 1);
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 2 != 0) System.out.print(i + " ");
+        }
+        System.out.println();
+    }
     
-    
-    
+    	// EJERCICIO 8
+    public static void ejercicio8() {
+        System.out.println("\n--- Ejercicio 8: programa que le una hora en formato de 24h y muestre si es: mañana, tarde o noche. ---");
+        int hora;
+
+        	// Validación de rango 0-23
+        do {
+            hora = leerEntero("Ingrese la hora (0-23): ");
+            if (hora < 0 || hora > 23)
+                System.out.println("Hora inválida. Debe estar entre 0 y 23.");
+        } while (hora < 0 || hora > 23);
+
+        if (hora < 12) System.out.println("Mañana");
+        else if (hora < 18) System.out.println("Tarde");
+        else System.out.println("Noche");
+    }
     
     
     
