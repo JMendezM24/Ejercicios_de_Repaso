@@ -173,6 +173,18 @@ public class Main {
     	System.out.println("PARTE 2 FINALIZADA");
     }
     
+    	// EJERCICIO 6
+    public static void ejercicio6() {
+        System.out.println("\n--- Ejercicio 6: programa que detrmine si un número es múltiplo de 7 o de 11. ---");
+        int n = leerEntero("Ingrese un número: ");
+
+        if (n % 7 == 0 || n % 11 == 0)
+            System.out.println("Es múltiplo de 7 o de 11");
+        else
+            System.out.println("No es múltiplo de 7 ni de 11");
+    }
+    
+    
     
     
     
