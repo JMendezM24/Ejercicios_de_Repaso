@@ -243,6 +243,28 @@ public class Main {
         }
     }
     
+    	// EJERCICIO 10
+    public static void ejercicio10() {
+        System.out.println("\n--- Ejercicio 10: programa que lea una opción(1-3) y dos números. ---");
+        int op;
+        do {
+            op = leerEntero("Opción (1 sumar, 2 restar, 3 multiplicar): ");
+            if (op < 1 || op > 3) System.out.println("Opción inválida.");
+        } while (op < 1 || op > 3);
+
+        int a = leerEntero("Número 1: ");
+        int b = leerEntero("Número 2: ");
+
+        switch (op) {
+            case 1 -> System.out.println("Resultado: " + (a + b));
+            case 2 -> System.out.println("Resultado: " + (a - b));
+            case 3 -> System.out.println("Resultado: " + (a * b));
+        }
+    }
+    
+    
+    
+    
     
     
     
