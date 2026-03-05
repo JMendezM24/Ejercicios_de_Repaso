@@ -76,6 +76,20 @@ public class Main {
 		System.out.println("PARTE 1 FINALIZADA");
 	}
 	
-	
+		// EJERCICIO 1
+    public static void ejercicio1() {
+        System.out.println("\n--- Ejercicio 1: programa que lea un número n y muestre la suma de todos los números divisibles entre 4 desde 1 hasta n. ---");
+        int n;
+        do {
+            n = leerEntero("Ingrese un número positivo: ");
+            if (n < 1) System.out.println("Debe ser mayor que 0.");
+        } while (n < 1);
+
+        int suma = 0;
+        for (int i = 1; i <= n; i++) {
+            if (i % 4 == 0) suma += i;
+        }
+        System.out.println("Suma: " + suma);
+    }
 	
 }
