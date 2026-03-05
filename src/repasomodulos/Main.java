@@ -328,6 +328,30 @@ public class Main {
         else System.out.println("No es triangular");
     }
     
+    	// EJERCICIO 15
+    public static void ejercicio15() {
+        System.out.println("\n--- Ejercicio 15: programa que lea un número y luego n números, mostrar promedio de negativos si los hay y si no indicarlo. ---");
+        int n;
+        do {
+            n = leerEntero("¿Cuántos números desea ingresar(se permiten negativos)?: ");
+            if (n <= 0) System.out.println("Debe ser > 0.");
+        } while (n <= 0);
+
+        int suma = 0, cont = 0;
+        for (int i = 0; i < n; i++) {
+            int num = leerEntero("Número " + (i + 1) + ": ");
+            if (num < 0) {
+                suma += num;
+                cont++;
+            }
+        }
+
+        if (cont == 0) System.out.println("No hay negativos");
+        else System.out.println("Promedio negativos: " + (suma / (double) cont));
+    }
+    
+    
+    
     
     
     
