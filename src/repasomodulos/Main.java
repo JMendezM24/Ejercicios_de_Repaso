@@ -225,6 +225,27 @@ public class Main {
     	System.out.println("PARTE 3 FINALIZADA");
     }
     
+    	// EJERCICIO 9
+    public static void ejercicio9() {
+        System.out.println("\n--- Ejercicio 9: programa para convertir un número del 1 al 5 a número romano. ---");
+        int n;
+        do {
+            n = leerEntero("Ingrese un número del 1 al 5: ");
+            if (n < 1 || n > 5) System.out.println("Fuera de rango.");
+        } while (n < 1 || n > 5);
+
+        switch (n) {
+            case 1 -> System.out.println("I");
+            case 2 -> System.out.println("II");
+            case 3 -> System.out.println("III");
+            case 4 -> System.out.println("IV");
+            case 5 -> System.out.println("V");
+        }
+    }
+    
+    
+    
+    
     
     
     
