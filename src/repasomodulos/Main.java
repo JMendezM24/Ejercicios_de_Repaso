@@ -362,7 +362,18 @@ public class Main {
         System.out.println("PARTE 5 FINALIZADA");
     }
     
-    
+    	// EJERCICIO 16
+    public static void ejercicio16() {
+        System.out.println("\n--- Ejercicio 16: programa que lea un número n y muestre los primeros n múltiplo de 6. ---");
+        int n;
+        do {
+            n = leerEntero("¿Cuántos múltiplos de 6 desea?: ");
+            if (n <= 0) System.out.println("Debe ser > 0.");
+        } while (n <= 0);
+
+        for (int i = 1; i <= n; i++) System.out.print((i * 6) + " ");
+        System.out.println();
+    }
     
     
     
