@@ -403,6 +403,23 @@ public class Main {
         System.out.println("Invertido: " + inv);
     }
     
+    	// EJERCICIO 19
+    public static void ejercicio19() {
+        System.out.println("\n--- Ejercicio 19: programa que lea un número y determine si la suma de los números entre 1 hasta el número ingresado es par o impar. ---");
+        int n;
+        do {
+            n = leerEntero("Ingrese un número >= 1: ");
+            if (n < 1) System.out.println("Debe ser >= 1.");
+        } while (n < 1);
+
+        int suma = n * (n + 1) / 2;
+        System.out.println((suma % 2 == 0) ? "La suma es par" : "La suma es impar");
+    }
+    
+    
+    
+    
+    
     
     
 }
