@@ -350,7 +350,17 @@ public class Main {
         else System.out.println("Promedio negativos: " + (suma / (double) cont));
     }
     
-    
+    // ==========
+    // PARTE 5
+    // ==========
+    public static void ejecutarParte5() {
+        ejercicio16();
+        ejercicio17();
+        ejercicio18();
+        ejercicio19();
+        ejercicio20();
+        System.out.println("PARTE 5 FINALIZADA");
+    }
     
     
     
