@@ -129,7 +129,26 @@ public class Main {
          System.out.println("Ceros: " + ceros);
      }
     
-    
+ // EJERCICIO 4
+    public static void ejercicio4() {
+        System.out.println("\n--- Ejercicio 4: programa que lea un número n y muestre el promedio de los números pares entre 1 y n. ---");
+        int n;
+        do {
+            n = leerEntero("Ingrese un número >= 2: ");
+            if (n < 2) System.out.println("Debe ser al menos 2.");
+        } while (n < 2);
+
+        int suma = 0, cont = 0;
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                suma += i;
+                cont++;
+            }
+        }
+
+        if (cont == 0) System.out.println("No hay pares.");
+        else System.out.println("Promedio pares: " + (suma / (double) cont));
+    }
     
     
     
