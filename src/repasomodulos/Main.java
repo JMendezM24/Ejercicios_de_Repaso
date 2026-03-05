@@ -416,10 +416,11 @@ public class Main {
         System.out.println((suma % 2 == 0) ? "La suma es par" : "La suma es impar");
     }
     
-    
-    
-    
-    
-    
-    
+ // EJERCICIO 20
+    public static void ejercicio20() {
+        System.out.println("\n--- Ejercicio 20: programa que lea temperatura en Celsius y la convierta a Fahrenheit. ---");
+        int c = leerEntero("Ingrese temperatura en Celsius: ");
+        double f = (c * 9.0 / 5) + 32;
+        System.out.println("Fahrenheit: " + f);
+    }   
 }
