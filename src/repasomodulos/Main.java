@@ -295,6 +295,24 @@ public class Main {
         }
     }
     
+    	// EJERCICIO 13
+    public static void ejercicio13() {
+        System.out.println("\n--- Ejercicio 13: programa que lea un número y muestre la cantidad de dígitos pares que contiene. ---");
+        int n = Math.abs(leerEntero("Ingrese un número: "));
+
+        int cont = 0;
+        while (n > 0) {
+            if ((n % 10) % 2 == 0) cont++;
+            n /= 10;
+        }
+        System.out.println("Dígitos pares: " + cont);
+    }
+    
+    
+    
+    
+    
+    
     
     
     
