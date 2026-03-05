@@ -1,10 +1,71 @@
 package repasomodulos;
 
+import java.util.Scanner;
+
 public class Main {
 
+	static Scanner sc = new Scanner(System.in);	
+	
 	public static void main(String[] args) {
-		
-
+		mostrarInicio();
+		menuPartes();
 	}
 
+		// =================
+		// MENSAJE INICIAL
+		// =================	
+	public static void mostrarInicio() {
+		System.out.println("Iniciando programa con ejercicios de repaso - Parcial 1.");
+		System.out.println("Al seleccionar una parte del programa se ejecutarán los ejercicios correspondientes");
+	}	
+		// =================
+		// MENÚ DE PARTES
+		// =================
+	public static void menuPartes() {
+        while (true) {
+        	System.out.println();
+            System.out.println("===== MENÚ DE PARTES =====");
+            System.out.println("1) Parte 1 - Ciclos y Operaciones Numéricas");
+            System.out.println("2) Parte 2 - Condiciones y Divisibilidad");
+            System.out.println("3) Parte 3 - Uso de switch");
+            System.out.println("4) Parte 4 - Análisis Numérico");
+            System.out.println("5) Parte 5 - Patrones y Transformaciones");
+            System.out.println("0) Salir");
+
+            int op = leerEntero("Seleccione una parte: ");
+
+            switch (op) {
+                case 1 -> ejecutarParte1();
+                case 2 -> ejecutarParte2();
+                case 3 -> ejecutarParte3();
+                case 4 -> ejecutarParte4();
+                case 5 -> ejecutarParte5();
+                case 0 -> {
+                    System.out.println("Saliendo del programa...");
+                    return;
+                }
+                default -> System.out.println("Opción inválida.");
+            }
+        }
+    }
+	
+		// ==================
+		// MÉTODO UTILITARIO
+		// ==================
+	public static int leerEntero(String mensaje) {
+		while (true) {
+			try {
+				System.out.print(mensaje);
+				int num = Integer.parseInt(sc.nextLine());
+				return num;
+        } catch (NumberFormatException e) {
+            System.out.println("Entrada inválida. Debe ingresar un número entero.");
+        }
+    }
+}
+	
+	
+	
+	
+	
 }
