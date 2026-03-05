@@ -163,7 +163,15 @@ public class Main {
     	System.out.println("Suma de dígitos: " + suma);
     }    
     
-    
+    	// ==========
+		// PARTE 2
+		// ==========
+    public static void ejecutarParte2() {
+    	ejercicio6();
+    	ejercicio7();
+    	ejercicio8();
+    	System.out.println("PARTE 2 FINALIZADA");
+    }
     
     
     
