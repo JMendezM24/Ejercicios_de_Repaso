@@ -285,7 +285,15 @@ public class Main {
         System.out.println("Diferencia: " + Math.abs(a - b));
     }
     
-    
+    	// EJERCICIO 12
+    public static void ejercicio12() {
+        System.out.println("\n--- Ejercicio 12: programa que lea un número y muestre su tabla de división(1-10). ---");
+        int n = leerEntero("Ingrese un número para tabla de división: ");
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " / " + i + " = " + (n / (double) i));
+        }
+    }
     
     
     
