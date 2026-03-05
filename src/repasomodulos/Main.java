@@ -106,9 +106,28 @@ public class Main {
         System.out.println("Factorial: " + fact);
     }
     
+		// EJERCICIO 3
+    public static void ejercicio3() {
+    	System.out.println("\n--- Ejercicio 3: programa que muestre cuantos son negativos, positivos y ceros de una cantidad de números ingresados. ---");
+    	int n;
+    	do {
+    		n = leerEntero("¿Cuántos números ingresará?: ");
+    		if (n <= 0) System.out.println("Debe ser mayor que 0.");
+    	} while (n <= 0);
+
+    	int pos = 0, neg = 0, ceros = 0;
+
+    	for (int i = 0; i < n; i++) {
+    		int num = leerEntero("Número " + (i + 1) + ": ");
+    		if (num > 0) pos++;
+    		else if (num < 0) neg++;
+    		else ceros++;
+    	}    
     
-    
-    
+    	 System.out.println("Positivos: " + pos);
+         System.out.println("Negativos: " + neg);
+         System.out.println("Ceros: " + ceros);
+     }
     
     
     
