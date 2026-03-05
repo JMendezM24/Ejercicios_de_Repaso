@@ -92,4 +92,38 @@ public class Main {
         System.out.println("Suma: " + suma);
     }
 	
+    	// EJERCICIO 2
+    public static void ejercicio2() {
+        System.out.println("\n--- Ejercicio 2: programa que muestre el factorial de un número. ---");
+        int n;
+        do {
+            n = leerEntero("Ingrese un número >= 0 para factorial: ");
+            if (n < 0) System.out.println("No se permiten negativos.");
+        } while (n < 0);
+
+        long fact = 1;
+        for (int i = 1; i <= n; i++) fact *= i;
+        System.out.println("Factorial: " + fact);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
