@@ -375,7 +375,18 @@ public class Main {
         System.out.println();
     }
     
-    
+    	// EJERCICIO 17
+    public static void ejercicio17() {
+        System.out.println("\n--- Ejercicio 17: programa que determine si es potencia de 2 de un número ingresado. ---");
+        int n;
+        do {
+            n = leerEntero("Ingrese un número positivo: ");
+            if (n <= 0) System.out.println("Debe ser positivo.");
+        } while (n <= 0);
+
+        boolean esPotencia = (n & (n - 1)) == 0;
+        System.out.println(esPotencia ? "Es potencia de 2" : "No es potencia de 2");
+    }
     
     
     
