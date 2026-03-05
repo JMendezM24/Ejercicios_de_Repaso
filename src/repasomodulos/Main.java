@@ -262,7 +262,17 @@ public class Main {
         }
     }
     
-    
+    // ==========
+    // PARTE 4
+    // ==========
+    public static void ejecutarParte4() {
+        ejercicio11();
+        ejercicio12();
+        ejercicio13();
+        ejercicio14();
+        ejercicio15();
+        System.out.println("PARTE 4 FINALIZADA");
+    }
     
     
     
