@@ -216,7 +216,14 @@ public class Main {
         else System.out.println("Noche");
     }
     
-    
+    	// =========
+		// PARTE 3
+		// =========
+    public static void ejecutarParte3() {
+    	ejercicio9();
+    	ejercicio10();
+    	System.out.println("PARTE 3 FINALIZADA");
+    }
     
     
     
