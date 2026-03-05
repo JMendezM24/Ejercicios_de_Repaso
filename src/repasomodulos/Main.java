@@ -274,7 +274,16 @@ public class Main {
         System.out.println("PARTE 4 FINALIZADA");
     }
     
-    
+    	// EJERCICIO 11
+    public static void ejercicio11() {
+        System.out.println("\n--- Ejercicio 11: programa que lea dos números y muestre: el mayor, el menor y la diferencia absoluta. ---");
+        int a = leerEntero("Ingrese a: ");
+        int b = leerEntero("Ingrese b: ");
+
+        System.out.println("Mayor: " + Math.max(a, b));
+        System.out.println("Menor: " + Math.min(a, b));
+        System.out.println("Diferencia: " + Math.abs(a - b));
+    }
     
     
     
