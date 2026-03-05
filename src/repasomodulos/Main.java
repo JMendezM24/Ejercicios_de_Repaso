@@ -388,7 +388,20 @@ public class Main {
         System.out.println(esPotencia ? "Es potencia de 2" : "No es potencia de 2");
     }
     
-    
+    // EJERCICIO 18
+    public static void ejercicio18() {
+        System.out.println("\n--- Ejercicio 18: programa que invierta el orden un número ingresado (ejem: 20 → 02). ---");
+        int n = leerEntero("Ingrese número a invertir: ");
+        int original = n;
+        int inv = 0;
+
+        while (n != 0) {
+            inv = inv * 10 + (n % 10);
+            n /= 10;
+        }
+        System.out.println("Número original: " + original);
+        System.out.println("Invertido: " + inv);
+    }
     
     
     
