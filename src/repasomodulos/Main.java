@@ -308,7 +308,25 @@ public class Main {
         System.out.println("Dígitos pares: " + cont);
     }
     
-    
+    	// EJERCICIO 14
+    public static void ejercicio14() {
+        System.out.println("\n--- Ejercicio 14: programa que lea un número y determine si es triangular. ---");
+        int n;
+        do {
+            n = leerEntero("Ingrese un número positivo: ");
+            if (n <= 0) System.out.println("Debe ser positivo.");
+        } while (n <= 0);
+
+        int suma = 0;
+        int k = 1;
+        while (suma < n) {
+            suma += k;
+            k++;
+        }
+
+        if (suma == n) System.out.println("Es triangular");
+        else System.out.println("No es triangular");
+    }
     
     
     
