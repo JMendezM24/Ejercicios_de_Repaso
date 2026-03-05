@@ -58,13 +58,23 @@ public class Main {
 				System.out.print(mensaje);
 				int num = Integer.parseInt(sc.nextLine());
 				return num;
-        } catch (NumberFormatException e) {
-            System.out.println("Entrada inválida. Debe ingresar un número entero.");
-        }
-    }
-}
+			} catch (NumberFormatException e) {
+				System.out.println("Entrada inválida. Debe ingresar un número entero.");
+        	}
+		}
+	}
 	
-	
+		// ==========
+		// PARTE 1
+		// ==========
+	public static void ejecutarParte1() {
+		ejercicio1();
+		ejercicio2();
+		ejercicio3();
+		ejercicio4();
+		ejercicio5();
+		System.out.println("PARTE 1 FINALIZADA");
+	}
 	
 	
 	
