@@ -129,7 +129,7 @@ public class Main {
          System.out.println("Ceros: " + ceros);
      }
     
- // EJERCICIO 4
+    	// EJERCICIO 4
     public static void ejercicio4() {
         System.out.println("\n--- Ejercicio 4: programa que lea un número n y muestre el promedio de los números pares entre 1 y n. ---");
         int n;
@@ -150,7 +150,18 @@ public class Main {
         else System.out.println("Promedio pares: " + (suma / (double) cont));
     }
     
-    
+		// EJERCICIO 5
+    public static void ejercicio5() {
+    	System.out.println("\n--- Ejercicio 5: programa que muestre la suma de los dígitos de un número. ---");
+    	int n = Math.abs(leerEntero("Ingrese un número: "));
+
+    	int suma = 0;
+    	while (n > 0) {
+    		suma += n % 10;
+    		n /= 10;
+    	}
+    	System.out.println("Suma de dígitos: " + suma);
+    }    
     
     
     
